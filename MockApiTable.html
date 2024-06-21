@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let students = [
+  {
+    "createdAt": "2024-06-18T10:44:41.750Z",
+    "name": "Gina Conn",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/709.jpg",
+    "rollno": "5",
+    "id": "1"
+  },
+  {
+    "createdAt": "2024-06-17T14:25:27.000Z",
+    "name": "Joy Abbott",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/981.jpg",
+    "rollno": "1",
+    "id": "2"
+  },
+  {
+    "createdAt": "2024-06-17T15:46:05.839Z",
+    "name": "Kristopher Reinger",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/276.jpg",
+    "rollno": "2",
+    "id": "3"
+  },
+  {
+    "createdAt": "2024-06-18T02:05:02.348Z",
+    "name": "Audrey Fritsch",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/55.jpg",
+    "rollno": "4",
+    "id": "4"
+  },
+  {
+    "createdAt": "2024-06-17T13:43:39.453Z",
+    "name": "Rosemarie Schneider",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/798.jpg",
+    "rollno": "4",
+    "id": "5"
+  },
+  {
+    "createdAt": "2024-06-18T02:59:22.429Z",
+    "name": "Christian Spencer",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/297.jpg",
+    "rollno": "8",
+    "id": "6"
+  },
+  {
+    "createdAt": "2024-06-18T06:32:44.838Z",
+    "name": "Wayne Buckridge",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/987.jpg",
+    "rollno": "8",
+    "id": "7"
+  },
+  {
+    "createdAt": "2024-06-17T15:22:57.241Z",
+    "name": "Reginald Paucek",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/208.jpg",
+    "rollno": "4",
+    "id": "8"
+  },
+  {
+    "createdAt": "2024-06-18T04:02:19.717Z",
+    "name": "James Ankunding",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1162.jpg",
+    "rollno": "1",
+    "id": "9"
+  },
+  {
+    "createdAt": "2024-06-17T23:13:26.458Z",
+    "name": "Janis Rohan",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/618.jpg",
+    "rollno": "6",
+    "id": "10"
+  },
+  {
+    "createdAt": "2024-06-18T08:05:57.198Z",
+    "name": "Ricardo Predovic",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1028.jpg",
+    "rollno": "7",
+    "id": "11"
+  }
+];
+
+    document.write("<table border='1'>");
+    document.write("<tr><th>Name</th><th>Rollno</th><th>id</th><th>Avatar</th></tr>");
+
+    for (let i = 0; i < students.length; i++) {
+    document.write("<tr>");
+    document.write("<td>" + students[i].name + "</td>");
+    document.write("<td>" + students[i].rollno + "</td>");
+    document.write("<td>" + students[i].id + "</td>");
+    document.write("<td>"+"<img src="+ students[i].avatar +">"+"</td>");
+    document.write("</tr>");
+}
+
+document.write("</table>");
+    </script>
+</body>
+</html>
