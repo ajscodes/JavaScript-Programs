@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let faculty = [
+            {
+                "Name" : "Arjun bala",
+                "ID" : "1",
+                "Exp" : "15+ Years"
+            },
+            {
+                "Name" : "Swati Vaishnav",
+                "ID" : "2",
+                "Exp" : "10+ Years"
+            },
+            {
+                "Name" : "Nisarg Tilala",
+                "ID" : "3",
+                "Exp" : "12+ Years"
+            }
+        ];
+        document.write("<table border=3 style='height: 200px; width: 300px;'>");
+        document.write("<tr><th>Name</th><th>ID</th><th>Experience</th></tr>");
+
+        for(fac of faculty){
+            document.write("<tr>");
+            document.write("<td><i>"+fac.Name+"</i></td>");
+            document.write('    ');
+            document.write("<td><b>"+fac.ID+"</b></td>");
+            document.write('    ');
+            document.write("<td><u>"+fac.Exp+"</u></td>");
+            document.write('<br/>');
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
